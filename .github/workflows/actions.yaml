@@ -1,0 +1,14 @@
+name: Software Quality - TP Git
+on: [push]
+
+jobs:
+  myJob:
+    runs-on: ubuntu-latest
+    steps:
+    - name: step1
+      uses: "actions/checkout@main"
+
+    - name: step2
+      run: |
+        echo "Testing sobel_morpho"
+        pwd
